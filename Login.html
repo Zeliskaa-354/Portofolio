@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tampilan Login</title>
+  <link rel="stylesheet" href="./Style Login.css">
+  <script>
+    function login(event) {
+      event.preventDefault();
+      
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "rahmat" && password === "rahmat123") {
+        alert("Login berhasil! Anda akan diarahkan ke dashboard.");
+        window.location.href = "JDashboard.html";
+      } else {
+        alert("Username atau password salah. Silakan coba lagi.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <div class="signin">
+      <div class="content">
+        <h2>Masuk</h2>
+        <form class="form" onsubmit="login(event)">
+          <div class="inputBox">
+            <input type="text" id="username" required>
+            <i>Nama</i>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password" required>
+            <i>Kata Sandi</i>
+          </div>
+          <div class="links">
+            <a href="#">Lupa Kata Sandi?</a>
+            <a href="#">Daftar</a>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Masuk">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

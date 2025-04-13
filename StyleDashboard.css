@@ -1,0 +1,71 @@
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Memastikan tinggi halaman penuh */
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff0060;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh; /* Tinggi minimum kontainer hingga penuh layar */
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    overflow-y: auto;
+}
+
+/* Table Styling */
+.sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.sales-table th, .sales-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.sales-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.sales-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Chart Canvas */
+canvas {
+    max-width: 100%;
+    height: auto;
+}
